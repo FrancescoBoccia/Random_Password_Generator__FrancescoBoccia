@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/css/main.css" />
+    <script defer src="script.js"></script>
     <title>Random Password Generator</title>
   </head>
   <body>
@@ -13,17 +14,18 @@
     <div class="container">
       <div class="container__inside">
         <div class="container__header">Password Generator</div>
-        <button class="container__button" type="button">Click Generate</button>
+        <button class="container__button" type="button">GENERATED PASSWORD</button>
 
         <!-- PASSWORD LENGTH CONTAINER -->
-        <div class="password__actualLength">lenght: <span>16</span></div>
+        <div class="password__actualLength">lenght: <spanc class="password__choosenLength">16</span></div>
         <div class="password__lengthContainer">
           <div class="password__minimumNumber">4</div>
           <input
             type="range"
             class="password__inputRange"
             name="inputRange"
-            id=""
+            id="range"
+            value="16"
             min="4"
             max="32"
           />
@@ -35,13 +37,14 @@
         <div class="settings__container">
           <div class="settings__world">settings</div>
           <div class="setting__inputs">
-            <div class="setting__input">
+            <div class="setting__input upperCase">
               Include Uppercase
               <label class="switch">
                 <input
                   type="checkbox"
                   name="inputUpperCase"
                   id="setting__upperCase"
+                  checked
                 />
                 <span class="slider round"></span>
               </label>
@@ -53,6 +56,8 @@
                   type="checkbox"
                   name="inputLowercase"
                   id="setting__lowercase"
+                  checked
+
                 />
                 <span class="slider round"></span>
               </label>
@@ -63,7 +68,9 @@
                 <input
                   type="checkbox"
                   name="inputNumbers"
-                  id="setting__Numbers"
+                  id="setting__numbers"
+                  checked
+
                 />
                 <span class="slider round"></span>
               </label>

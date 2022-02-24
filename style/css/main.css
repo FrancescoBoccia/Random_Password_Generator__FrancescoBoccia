@@ -38,8 +38,7 @@ body {
     background-color: var(--second-color);
     color: #fff;
     border-radius: var(--border-radius);
-    border: none;
-    text-transform: uppercase; }
+    border: none; }
 
 .settings__world,
 .password__actualLength {
@@ -48,9 +47,9 @@ body {
   margin: 15px 0 0 10px;
   color: var(--text-color);
   text-transform: uppercase; }
-  .settings__world span,
-  .password__actualLength span {
-    color: #fff; }
+
+.password__choosenLength {
+  color: #fff; }
 
 .password__lengthContainer {
   width: 100%;
@@ -78,7 +77,7 @@ input[type="range"] {
   border-radius: 5px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0528c9), to(#0528c9));
   background-image: linear-gradient(#0528c9, #0528c9);
-  background-size: 50% 100%;
+  background-size: 40% 100%;
   background-repeat: no-repeat; }
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -180,4 +179,7 @@ input:checked + .slider:before {
   border-radius: var(--border-radius);
   text-transform: uppercase;
   cursor: pointer; }
+  .generate__button:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#6c64bc), color-stop(#6a77d7), color-stop(#6f52a2), to(#6a77d7));
+    background-image: linear-gradient(to right, #6c64bc, #6a77d7, #6f52a2, #6a77d7); }
 /*# sourceMappingURL=main.css.map */

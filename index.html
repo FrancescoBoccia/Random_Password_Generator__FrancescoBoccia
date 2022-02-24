@@ -16,56 +16,69 @@
         <button class="container__button" type="button">Click Generate</button>
 
         <!-- PASSWORD LENGTH CONTAINER -->
-          <div class="password__actualLength">lenght: <span>16</span></div>
-          <div class="password__lengthContainer">
-            <div class="password__minimumNumber">4</div>
-            <input
-              type="range"
-              class="password__inputRange"
-              name="inputRange"
-              id=""
-              min="4"
-              max="32"
-            />
-            <div class="password__maximumNumber">32</div>
-          </div>
+        <div class="password__actualLength">lenght: <span>16</span></div>
+        <div class="password__lengthContainer">
+          <div class="password__minimumNumber">4</div>
+          <input
+            type="range"
+            class="password__inputRange"
+            name="inputRange"
+            id=""
+            min="4"
+            max="32"
+          />
+          <div class="password__maximumNumber">32</div>
         </div>
 
         <!-- SETTINGS CONTAINER -->
 
         <div class="settings__container">
           <div class="settings__world">settings</div>
-          <div class="settings__inputs">
-            Include Uppercase
-            <input
-              type="checkbox"
-              name="settings__input"
-              id="settings__upperCase"
-            />
-          </div>
-          <div class="settings__input">
-            Include Lowercase
-            <input
-              type="checkbox"
-              name="settings__input"
-              id="settings__lowerCase"
-            />
-          </div>
-          <div class="settings__input">
-            Include Numbers
-            <input
-              type="checkbox"
-              name="settings__input"
-              id="settings__number"
-            />
-          </div>
-          <div class="settings__input">
-            Include Symbols
-            <input
-              type="checkbox"
-              name="settings__input"
-              id="settings__symbols"
-            />
+          <div class="setting__inputs">
+            <div class="setting__input">
+              Include Uppercase
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  name="inputUpperCase"
+                  id="setting__upperCase"
+                />
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="setting__input">
+              Include Lowercase
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  name="inputLowercase"
+                  id="setting__lowercase"
+                />
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="setting__input">
+              Include Numbers
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  name="inputNumbers"
+                  id="setting__Numbers"
+                />
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="setting__input">
+              Include Symbols
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  name="inputSymbols"
+                  id="setting__symbols"
+                />
+                <span class="slider round"></span>
+              </label>
+            </div>
           </div>
         </div>
 

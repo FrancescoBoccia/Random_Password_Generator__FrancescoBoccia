@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/main.css" />
+    <title>Random Password Generator</title>
+  </head>
+  <body>
+    <!-- HEADER CONTAINER -->
+
+    <div class="container">
+      <div class="container__inside">
+        <div class="container__header">Password Generator</div>
+        <button class="container__button" type="button">Click Generate</button>
+
+        <!-- PASSWORD LENGTH CONTAINER -->
+          <div class="password__actualLength">lenght: <span>16</span></div>
+          <div class="password__lengthContainer">
+            <div class="password__minimumNumber">4</div>
+            <input
+              type="range"
+              class="password__inputRange"
+              name="inputRange"
+              id=""
+              min="4"
+              max="32"
+            />
+            <div class="password__maximumNumber">32</div>
+          </div>
+        </div>
+
+        <!-- SETTINGS CONTAINER -->
+
+        <div class="settings__container">
+          <div class="settings__world">settings</div>
+          <div class="settings__inputs">
+            Include Uppercase
+            <input
+              type="checkbox"
+              name="settings__input"
+              id="settings__upperCase"
+            />
+          </div>
+          <div class="settings__input">
+            Include Lowercase
+            <input
+              type="checkbox"
+              name="settings__input"
+              id="settings__lowerCase"
+            />
+          </div>
+          <div class="settings__input">
+            Include Numbers
+            <input
+              type="checkbox"
+              name="settings__input"
+              id="settings__number"
+            />
+          </div>
+          <div class="settings__input">
+            Include Symbols
+            <input
+              type="checkbox"
+              name="settings__input"
+              id="settings__symbols"
+            />
+          </div>
+        </div>
+
+        <!-- CONTAINER FOOTER -->
+
+        <div class="generate__password">
+          <button class="generate__button" type="submit">
+            Generate Password
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
